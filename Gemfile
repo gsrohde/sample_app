@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
 gem 'bootstrap-sass', '2.1'
+gem 'bcrypt-ruby', '3.0.1'
 
 gem 'jquery-rails', '2.0.2'
 
@@ -22,6 +23,9 @@ group :assets do
   gem 'uglifier', '1.2.3'
 end
 
+group :development do
+  gem 'annotate', '2.5.0'
+end
 
 # Test gems on Macintosh OS X
 group :test do
