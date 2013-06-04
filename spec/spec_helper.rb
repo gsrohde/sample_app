@@ -69,6 +69,9 @@ end
 
 
 # This file is copied to spec/ when you run 'rails generate rspec:install'
+### The Rails Tutorial seems to assume tests are run in the test enviroment.  Therefore, I replace
+### ENV["RAILS_ENV"] ||= 'test'
+### with
 ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
